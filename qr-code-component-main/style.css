@@ -1,0 +1,132 @@
+/* Import Outfit font */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+/* Global Styles */
+body {
+  font-family: 'Outfit', sans-serif; /* Use Outfit font */
+  font-size: 15px; /* Body copy font size */
+  margin: 0;
+  padding: 0;
+  background-color: hsl(212, 45%, 89%); /* Slate 300 background color */
+  color: hsl(218, 44%, 22%); /* Slate 900 text color */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* White container */
+.white-container {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  width: 320px; /* Fixed width for mobile view */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* QR code image */
+.qr-code img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Headline and description */
+.line-one {
+  font-size: 18px;
+  font-weight: 700; /* Bold weight */
+  color: hsl(216, 15%, 48%); /* Slate 500 color */
+  margin-top: 20px;
+}
+
+.line-two {
+  font-size: 14px;
+  color: hsl(216, 15%, 48%); /* Slate 500 color */
+  margin-top: 10px;
+}
+
+/* Attribution styles */
+.attribution {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.attribution a {
+  color: hsl(216, 15%, 48%); /* Slate 500 color */
+}
+
+/* Responsive styles for larger screens */
+@media (min-width: 375px) {
+  /* Mobile styling for .white-container */
+  .white-container {
+    width: 375px;
+  }
+}
+
+@media (min-width: 1440px) {
+  /* Desktop layout */
+  body {
+    font-size: 16px; /* Slightly larger font size for desktop */
+  }
+
+  .white-container {
+    width: 450px; /* Increase container width for desktop */
+  }
+
+  .line-one {
+    font-size: 24px; /* Increase font size for larger screens */
+  }
+
+  .line-two {
+    font-size: 16px; /* Increase font size for larger screens */
+  }
+}
+
+
+/* Mobile responsive */
+@media (max-width: 375px) {
+    .white-container {
+      width: 90%; /* Make the container width responsive and adjust to the screen */
+      padding: 15px; /* Reduce padding on small screens */
+    }
+    
+    .line-one {
+      font-size: 16px; /* Smaller font size on mobile */
+    }
+  
+    .line-two {
+      font-size: 12px; /* Smaller font size for mobile */
+    }
+  
+    .attribution {
+      font-size: 10px; /* Adjust attribution text size */
+    }
+  }
+  
+  /* Larger screen responsive adjustments (min-width 375px and up) */
+  @media (min-width: 375px) {
+    .white-container {
+      width: 50%; /* For screens 375px and up, set a width of 375px */
+    }
+  }
+  
+  /* Desktop layout (1440px and up) */
+  @media (min-width: 1440px) {
+    body {
+      font-size: 16px; /* Slightly larger font size for desktop */
+    }
+  
+    .white-container {
+      width: 450px; /* Increase width for larger screens */
+    }
+  
+    .line-one {
+      font-size: 24px; /* Larger font size for the headline */
+    }
+  
+    .line-two {
+      font-size: 16px; /* Increase font size for larger screens */
+    }
+  }
